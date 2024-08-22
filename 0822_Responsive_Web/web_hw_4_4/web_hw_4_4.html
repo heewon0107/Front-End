@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .first {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width:992px) {
+            .category {
+                display: none;
+        }
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+  <body>
+    <header class="container first">
+        <div class="col">
+            <h5>주목 상품</h5>
+            <div class="col-xs-12 col col-lg-9">
+                <img src="assets/product1.jpg" alt="">
+                <h6>상품 1</h6>
+                <p>This is first product you can read this sdadsadadsadimfdsadsadormation.</p>
+            </div>
+            <div class="col-xs-12 col col-lg-9">
+                <img src="assets/product2.jpg" alt="">
+                <h6>상품 2</h6>
+                <p>This is product imformation.</p>
+            </div>
+            <div class="col-xs-12 col col-lg-9">
+                <img src="assets/product3.jpg" alt="">
+                <h6>상품 3</h6>
+                <p>This is product imformation.</p>
+            </div>
+        </div>
+        <category class="category col-3">
+            <ul><strong>카테고리</strong>
+                <li>카테고리 1</li>
+                <li>카테고리 2</li>
+                <li>카테고리 3</li>
+                <li>카테고리 4</li>
+            </ul>
+        </category>
+    </header>
+    <main class="container d-flex">
+        <div class="row">
+            <div class="col-xs-12 col-lg-4 offset-md-2 offset-lg-0"><h6>인기 상품</h6>
+                <div><img src="assets/product4.jpg" alt="">
+                    <h6>상품 4</h6>
+                    <p>This is product imformation. is's cheery cake.</p></div>
+                <div><img src="assets/product5.jpg" alt="">
+                    <h6>상품 5</h6>
+                    <p>This is product imformation. is's a perfume.</p></div>
+            </div>
+            <div class="col-xs-12 col-lg-4 offset-md-2 offset-lg-0"><h6>신상</h6>
+                <div><img src="assets/product6.jpg" alt="">
+                    <h6>상품 6</h6>
+                    <p>This is product imformation. is's a perfume.</p></div>
+                <div><img src="assets/product7.jpg" alt="">
+                    <h6>상품 7</h6>
+                    <p>This is product imformation. is's a perfume.</p></div>
+            </div>
+            <div class="col-xs-12 col-lg-4 offset-md-2 offset-lg-0"><h6>특별 할인</h6>
+                <div><img src="assets/product8.jpg" alt="">
+                    <h6>상품 8</h6>
+                    <p>This is product imformation. There are many beauty.</p></div>
+                <div><img src="assets/product9.jpg" alt="">
+                    <h6>상품 9</h6>
+                    <p>This is product imformation. There are many beauty in pink handbag.</p></div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
